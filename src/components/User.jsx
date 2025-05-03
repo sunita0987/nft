@@ -8,7 +8,6 @@ const User = () => {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <div className="flex gap-6">
-        {/* Image */}
         <div className="w-1/3">
           <img
             src="src/assets/images/show.png"
@@ -28,13 +27,13 @@ const User = () => {
           </p>
           <div className="flex gap-2 mb-4">
             <button
-              className="bg-blue-100 text-black px-4 py-2 rounded-4xl"
+              className="bg-blue-100 text-black px-4 py-2 rounded-4xl cursor-pointer hover:bg-blue-600 hover:text-white"
               onClick={() => setShowJourney(false)}
             >
               Unshow Journey of Feed
             </button>
             <button
-              className="bg-blue-600 text-white px-4 py-2 rounded-4xl"
+              className="bg-blue-600 text-white px-4 py-2 rounded-4xl cursor-pointer hover:bg-blue-100 hover:text-black"
               onClick={() => setShowJourney(true)}
             >
               Show Journey of Feed

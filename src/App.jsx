@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import User from "./components/User";
+import Section from "./components/Section";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,11 +16,13 @@ function App() {
       <Navbar />
       <Header />
       {/* <User/> */}
+      <Section/>
       <Footer />
       <Routes>
         {/* <Route path="/" element={<Header />} /> */}
         <Route path="/Feed" element={<Footer />} />
         <Route path="/user" element={<User/>} />
+        <Route path="/Events" element={<Section/>}/>
       </Routes>
     </>
   );
